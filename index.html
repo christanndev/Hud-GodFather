@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.3.0/css/pro.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+        <link rel="stylesheet" href="hud.css">
+    </head>
+
+    <body>
+        <div class="HudBase" :style="{zoom:zoom}">
+            <div class="MoneyHud">
+                <div class="WaterMark">
+                    <div class="Title">
+                        <div class="BigText">godfather rp</div>
+                        <div class="SmallText">discord.gg/gdfro</div>
+                    </div>
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="PlayerIds">
+                    <div class="Bg">
+                        <div class="Text">250</div>
+                        <div class="PulaluiTudor">
+                            <div class="Icon2"></div>
+                        </div>
+                    </div>
+                    <div class="Bg">
+                        <div class="Text">134</div>
+                        <div class="PulaluiTudor">
+                            <div class="Icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="SafeZone" v-show="safezone.active">
+                    <div class="Bg">
+                        <div class="Line">
+                            <div class="Text">Green Zone</div>
+                        </div>
+                        <img src="safezone.png" alt="">
+                    </div>
+                </div>
+                <div class="Weapon">
+                    <div class="BgImg">
+                        <img src="ak47.png" alt="">
+                    </div>
+                    <div class="BgName">
+                        <div class="WName">
+                            <div class="Text">AK-47 MK2</div>
+                        </div>
+                        <div class="Ammo">
+                            <div class="Text">30/32</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TextUiCont">
+                <div class="Button">
+                    <div class="Letter">E</div>
+                </div>
+                <div class="Texts">
+                    <div class="BigText">Press E</div>
+                    <div class="SmallText">să intrii la aparate</div>
+                </div>
+            </div>
+        </div>
+        <script src="hud.js"></script>
+    </body>
+</html>

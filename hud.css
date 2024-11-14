@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes FadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.HudBase {
+    position: absolute;
+    user-select: none;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+     background: url(bg.png) no-repeat;
+    background-size: 100% 100%; 
+}
+
+.HudBase > .MoneyHud {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.HudBase > .MoneyHud > .WaterMark {
+    height: 65px;
+    width: 172px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.HudBase > .MoneyHud > .WaterMark > .Title {
+    width: 108px;
+    height: 30px;
+}
+
+.HudBase > .MoneyHud > .WaterMark > .Title > .BigText {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.HudBase > .MoneyHud > .WaterMark > .Title > .SmallText {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.HudBase > .MoneyHud > .WaterMark img {
+    width: 64px;
+    height: 64px;
+    margin-left: 110px;
+    margin-top: -35px;
+}
+
+.HudBase > .MoneyHud > .PlayerIds {
+    position: absolute;
+    height: 26px;
+    width: 101px;
+    top: 55px;
+    right: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HudBase > .MoneyHud > .PlayerIds > .Bg { 
+    width: 47px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HudBase > .MoneyHud > .PlayerIds > .Bg > .PulaluiTudor {
+    background: url(polygoanelepulii.png) no-repeat;
+    background-size: 100% 100%;
+    height: 28px;
+    width: 29px;
+    display: flex;
+    justify-content: center;
+}
+
+.HudBase > .MoneyHud > .PlayerIds > .Bg > .PulaluiTudor > .Icon {
+    width: 20px;
+    height: 20px;
+    background: url(id.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.HudBase > .MoneyHud > .PlayerIds > .Bg > .PulaluiTudor > .Icon2 {
+    width: 20px;
+    height: 20px;
+    background: url(online.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.HudBase > .MoneyHud > .PlayerIds > .Bg > .Text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.HudBase > .MoneyHud > .SafeZone {
+    position: absolute;
+    width: 123px;
+    height: 42px;
+    top: 100px;
+    right: 20px;
+    animation: FadeIn 1s;
+}
+
+.HudBase > .MoneyHud > .SafeZone.Close {
+    animation: FadeOut 1s;
+}
+
+.HudBase > .MoneyHud > .SafeZone > .Bg > .Line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 28px;
+    background: linear-gradient(270deg, rgba(9, 10, 14, 0.25) -22.73%, rgba(9, 10, 14, 0) 100%);
+}
+
+.HudBase > .MoneyHud > .SafeZone > .Bg > .Line > .Text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+
+.HudBase > .MoneyHud > .SafeZone > .Bg img {
+    width: 90px;
+    height: 90px;
+    margin-top: -60px;
+    margin-left: 60px;
+    z-index: 1;
+}
+
+.HudBase > .MoneyHud > .Weapon {
+    position: absolute;
+    width: 205px;
+    height: 77px;
+    top: 150px;
+    right: 20px;
+    animation: FadeIn 1s;
+}
+
+.HudBase > .MoneyHud > .Weapon.Close {
+    animation: FadeOut 1s;
+}
+
+.HudBase > .MoneyHud > .Weapon > .BgImg {
+    width: 205px;
+    height: 50px;
+    background: linear-gradient(270deg, rgba(9, 10, 14, 0.25) 0%, rgba(9, 10, 14, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.HudBase > .MoneyHud > .Weapon > .BgImg img {
+    width: 160px;
+    height: 45px;
+    margin-right: -40px;
+}
+
+.HudBase > .MoneyHud > .Weapon > .BgName {
+    width: 205px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HudBase > .MoneyHud > .Weapon > .BgName > .Ammo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 27px;
+    background: rgba(255, 0, 0, 0.25);
+}
+
+.HudBase > .MoneyHud > .Weapon > .BgName > .Ammo > .Text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: right;
+    color: #FF0000;
+}
+
+.HudBase > .MoneyHud > .Weapon > .BgName > .WName {
+    width: 145px;
+    height: 27px;
+    background: linear-gradient(269.96deg, rgba(9, 10, 14, 0.25) 0.04%, rgba(9, 10, 14, 0) 99.96%);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.HudBase > .MoneyHud > .Weapon > .BgName > .WName > .Text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.55);
+    margin-right: 10px;
+}
+
+.HudBase > .TextUiCont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5px;
+    left: 105px;
+}
+
+.HudBase > .TextUiCont > .Button {
+    width: 26px;
+    height: 26px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 0px #A2A2A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HudBase > .TextUiCont > .Button > .Letter {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.HudBase > .TextUiCont > .Texts {
+    width: 160px;
+    height: 28px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.HudBase > .TextUiCont > .Texts > .BigText {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+} 
+
+.HudBase > .TextUiCont > .Texts > .SmallText {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
